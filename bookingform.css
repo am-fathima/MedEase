@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/blur-hospital.jpg');  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background-color: #dcdcdc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    border: 20px #00897b solid;
+}
+.profile-section {
+    display: flex;
+    align-items: center;
+    background-color: #5f9ea0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    background-image: url('doctor.png');  
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.doctor-info {
+    text-align: left;
+}
+.doctor-info h2 {
+    margin: 0;
+}
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+}
+.appointment-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.appointment-form input, 
+.appointment-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.back-btn, .submit-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.back-btn {
+    background-color: #5f9ea0;
+    color: white;
+}
+.submit-btn {
+    background-color: #00bfa5;
+    color: white;
+}
+.back-btn:hover {
+    background-color: #4682b4;
+}
+.submit-btn:hover {
+    background-color: #00897b;
+}

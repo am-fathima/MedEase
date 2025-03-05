@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/blur-hospital.jpg');  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color:  #dcdcdc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    border: 20px #00897b solid;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #5f9ea0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    background-image: url('doctor.png');  
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.doctor-info {
+    text-align: center;
+}
+
+.doctor-info h2 {
+    margin: 0;
+}
+
+.booking-section {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color:  #5f9ea0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.book-btn {
+    background-color: #00bfa5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background-color: #00897b;
+}
+
+.back-btn-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.back-btn {
+    background-color: #5f9ea0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #4682b4;
+}

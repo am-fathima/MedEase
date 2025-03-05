@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header Section */
+.top-bar {
+    background-color: #01A99A;
+    color: white;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-left a {
+    color: white;
+    margin-right: 15px;
+}
+
+.top-bar-right span {
+    margin-left: 15px;
+}
+
+/* Logo and Main Navigation */
+.main-nav {
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 90px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #01A99A;
+    font-weight: bold;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li a:hover {
+    color: #007A78;
+}
+
+/* Main Menu */
+.menu-bar {
+    background-color: #005BB5;
+}
+
+.menu-links {
+    display: flex;
+    list-style: none;
+}
+
+.menu-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+.menu-links li a:hover {
+    background-color: #004897;
+}
+
+/* Hero Section */
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for better text readability */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Adjusted hero text styles */
+.hero h1 {
+    color: #005BB5;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.hero p {
+    color: #00A99D;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.btn {
+    background-color: #005BB5;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #004897;
+}
+
+.login-btn {
+    padding: 10px 15px;
+    border: 1px solid rgb(247, 247, 247);
+    border-radius: 5pt;
+    background-color: #005BB5;
+    color: aliceblue;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+/* Right Image Container */
+.right-image-container {
+    width: 60%; 
+    margin-left: auto; 
+}
+
+.right-image-container img {
+    width: 100%; /* Adjusted to fit the container */
+    border-radius: 10px;
+}
+
+footer {
+    background: #005BB5;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}

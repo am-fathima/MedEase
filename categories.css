@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #8fbde3;
+    background: url('images/blur-hospital.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+   
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: rgb(25, 18, 143);
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #183ebd;
+    margin: 10px 0;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #573eb4;
+    margin-bottom: 30px;
+  }
+  
+  .specialties {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjusts to three items per row */
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    color: #1c5b85;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #1c5b85;
+  }
+
+  
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d52b9;
+  /* Primary color */
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar .logo h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.menu-links {
+  display: flex;
+  list-style: none;
+}
+
+.menu-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+}
+
+.menu-links li a:hover {
+  background-color: #004897;
+}
+
+
+  

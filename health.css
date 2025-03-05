@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/blur-hospital.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures background remains fixed during scroll */
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    margin-top: 70px;
+  
+}
+
+ /* Navigation Bar */
+ .navbar {
+     
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #005BB5;
+                padding: 1rem 2rem; /* Adds space inside the navbar */
+                position: fixed; /* Makes the navbar fixed */
+                top: 0; /* Sticks it to the top of the page */
+                width: 100%; /* Ensures it spans the full width of the page */
+                z-index: 1000; /* Keeps it above other content */
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+                box-sizing: border-box; /* Includes padding in width/height calculations */
+      }
+  
+  .nav-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ecf0f1;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1rem;
+  }
+  
+  .nav-links a:hover {
+    color: #1abc9c;
+  }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #46c265;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.latest-health-tips, .top-health-tips, .trending-now {
+    margin-top: 20px;
+}
+
+.latest-health-tips h2, .top-health-tips h2, .trending-now h2 {
+    color: #2874a6;
+}
+
+.tips {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px; /* Adds consistent spacing between items */
+    max-width: 90%; /* Constrains the layout to the viewport width */
+    margin: 20px auto;
+}
+
+.tip {
+    flex: 1 1 calc(30% - 20px); /* Ensure each box takes 30% width minus the gap */
+    max-width: 30%; /* Limit max width of each tip */
+    text-align: center;
+    background-color: #e0e7ff;
+    padding: 15px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding doesn't affect size */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    height: 350px; /* Standard height for all boxes */
+}
+
+.tip:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tip img.responsive-image {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.tip p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.tip a {
+    color: #2874a6;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.tip a:hover {
+    color: #ff6f61;
+}
+
+.top-health-tips ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.top-health-tips li {
+    background-color: #e0e7ff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.top-health-tips li:hover {
+    background-color: #cce7ff;
+}
+
+.top-health-tips li a {
+    color: #2874a6;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.top-health-tips li a:hover {
+    color: #ff6f61;
+}
+
+.trending-now {
+    text-align: center;
+}
+
+.trending-now .trend {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.trend .heart-health, .trend .weight-loss {
+    width: 48%;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.heart-health {
+    background-color: #cce7ff;
+}
+
+.weight-loss {
+    background-color: #728880;
+}
+
+.trend h3 {
+    margin-top: 0;
+}
+
+.trend p {
+    font-size: 14px;
+}
+
+.trend a {
+    color: #2874a6;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.trend:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.trend a:hover {
+    color: #ff6f61;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2874a6;
+    border-radius: 0 0 10px 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff6f61;
+}

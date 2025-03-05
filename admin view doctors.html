@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Management</title>
+    <style>
+        /* common */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #a0c3ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Header  */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1100px;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #2c5aa0;
+        }
+
+        .header button {
+            background-color: #4d8af0;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .header button:hover {
+            background-color: #2c5aa0;
+        }
+
+        /* Table Container */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #4d8af0;
+            color: white;
+        }
+
+        td {
+            background-color: #f8f8f8;
+        }
+
+     
+        .pagination {
+            margin-top: 15px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .pagination span {
+            margin-right: 10px;
+            color: #4d8af0;
+            cursor: pointer;
+        }
+
+        .pagination span:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="header">
+        <h1>MedEase</h1>
+        <button>+ ADD NEW</button>
+    </div>
+
+   
+    <div class="container">
+        <!-- Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Doctor ID</th>
+                    <th>Doctor Name</th>
+                    <th>Position</th>
+                    <th>Date of Start Working</th>
+                    <th>Experience</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>D01</td>
+                    <td>Dr. N</td>
+                    <td>Dermatology</td>
+                    <td>9/8/2020</td>
+                    <td>10 years</td>
+                    <td>0XX-XXX-XXX</td>
+                    <td>Y@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>D02</td>
+                    <td>Dr. J</td>
+                    <td>Neurology</td>
+                    <td>5/1/2015</td>
+                    <td>5 years</td>
+                    <td>0XX-XXX-XXX</td>
+                    <td>Y@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>D03</td>
+                    <td>Dr. M</td>
+                    <td>Cardiology</td>
+                    <td>9/10/2012</td>
+                    <td>12 years</td>
+                    <td>0XX-XXX-XXX</td>
+                    <td>Y@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>D04</td>
+                    <td>Dr. T</td>
+                    <td>Pediatrics</td>
+                    <td>9/8/2014</td>
+                    <td>15 years</td>
+                    <td>0XX-XXX-XXX</td>
+                    <td>Y@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>D05</td>
+                    <td>Dr. V</td>
+                    <td>Ophthalmology</td>
+                    <td>9/8/2020</td>
+                    <td>12 years</td>
+                    <td>0XX-XXX-XXX</td>
+                    <td>Y@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>D06</td>
+                    <td>Dr. Y</td>
+                    <td>Cardiology</td>
+                    <td>5/1/2015</td>
+                    <td>7 years</td>
+                    <td>0XX-XXX-XXX</td>
+                    <td>Y@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>D07</td>
+                    <td>Dr. A</td>
+                    <td>Pediatrics</td>
+                    <td>9/10/2012</td>
+                    <td>9 years</td>
+                    <td>0XX-XXX-XX

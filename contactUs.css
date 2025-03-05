@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('images/blur-hospital.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d52b9;
+  /* Primary color */
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar .logo h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.menu-links {
+  list-style: none;
+  display: flex;
+}
+
+.menu-links li {
+  margin-left: 20px;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu-links a:hover {
+  color: #f8f9fa;
+  /* Light hover effect */
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  /* Add a semi-transparent overlay */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: left;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: rgb(17, 30, 127);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.form-section {
+  flex: 1;
+  max-width: 400px;
+  margin-left: 20px;
+  background-color: #508fd4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-section h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid white;
+  display: inline-block;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+
+.checkbox a {
+  color: #77e1a1;
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #77e1a1;
+  color: #1c5b85;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5ec092;
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color:#376fab;
+  border-radius: 10px;
+}
+
+.contact div {
+  text-align: center;
+}
+
+.contact h3 {
+  color: yellow;
+}
+
+.contact p {
+  color: #fff;
+  margin: 5px 0;
+}

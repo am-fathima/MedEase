@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Emergency Service</title>
+  <link rel="stylesheet" href="emergency.css">
+</head>
+<body>
+
+     <!-- Navigation Bar -->
+     <nav class="navbar">
+      <div class="nav-logo">MedEase</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="categories.html">Medical Specialties</a></li>
+        <li><a href="appointment.html">Appointments</a></li>
+        <li><a href="health.html">Health Care Tips</a></li>
+        <li><a href="emergency.html">Emergency</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <br>
+
+  <div class="emergency-service-container">
+    <header class="emergency-header">
+      <h1>Emergency Services</h1>
+      <p>Your health is our priority. In case of emergencies, we're here to help.</p>
+    </header>
+
+    <div class="emergency-details">
+      <div class="service-card">
+        <h2>Emergency Contact</h2>
+        <p>Call immediately in case of an emergency</p>
+        <p class="contact-number">+1-800-123-4567</p>
+        <button class="call-button" onclick="callEmergency()">Call Now</button>
+      </div>
+      <div class="service-card">
+        <h2>Ambulance Services</h2>
+        <p>We provide 24/7 ambulance service for urgent medical transport.</p>
+        <p class="contact-number">+1-800-987-6543</p>
+        <button class="call-button" onclick="callAmbulance()">Call Ambulance</button>
+      </div>
+      <div class="service-card">
+        <h2>Emergency Room</h2>
+        <p>For immediate medical attention, visit our Emergency Room.</p>
+        <p>Located at: <strong>Ground Floor, Room 101</strong></p>
+        <button class="map-button" onclick="showMap()">Show Location</button>
+      </div>
+    </div>
+
+    <div class="emergency-alert">
+      <h2>Urgent Alert</h2>
+      <p>If you're facing a critical medical situation, please click below:</p>
+      <button class="alert-button" onclick="alertEmergency()">Send Alert</button>
+    </div>
+  </div>
+
+  <script>
+    // Call Emergency Phone Function
+    function callEmergency() {
+      alert('Calling Emergency Services...');
+      // You can add code to initiate a phone call or provide a dial link (e.g., "tel:+18001234567")
+    }
+
+    // Call Ambulance Phone Function
+    function callAmbulance() {
+      alert('Calling Ambulance...');
+      // You can add code to initiate a phone call or provide a dial link
+    }
+
+    // Show Map Function for ER Location
+    function showMap() {
+      alert('Showing Emergency Room Location on Map...');
+      // You can add code to display a map or open Google Maps for the location
+    }
+
+    // Send Emergency Alert Function
+    function alertEmergency() {
+      alert('Emergency alert has been sent!');
+      // This could trigger an actual alert or notify medical staff via email/API
+    }
+  </script>
+</body>
+</html>
