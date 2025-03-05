@@ -58,7 +58,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             } else {
                 $errorMessage = "Invalid admin name or password.";
             }
-        } else {
+        }elseif ($role === 'doctor') {
+       
+            // Check login details in the  doctor table
+            $stmt = $conn->prepare("SELECT id, name, password FROM  doctors WHERE name = :name");
+            $stmt->bindParam(':name', $email); // Since  doctors logs in with 'name', not email
+            $stmt->execute();
+
+            $doctors = $stmt->fetch(PDO::FETCH_ASSOC);
+
+           // Directly compare passwords (since it's stored in plain text)
+           if ($doctors && $password === $doctors['password']) {
+            $_SESSION['user_id'] = $doctors['id'];
+            $_SESSION['role'] = 'doctors';
+            $_SESSION['fullname'] = $doctors['name']; // Store admin name
+
+                header("Location: admin view doctors.html");
+                exit;
+            } else {
+                $errorMessage = "Invalid admin name or password.";
+            }
+        }  else {
             $errorMessage = "Invalid role selected.";
         }
     } catch (PDOException $e) {
@@ -95,7 +115,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <option value="" disabled selected>Select Role</option>
                         <option value="patient">Patient</option>
                         <option value="admin">Admin</option>
-                    </select>
+                        <option value="doctor">Doctor</option>
+                    </select><br><br>
 
                     <a href="signup.html">Do not have an account? Register here</a>
                     <button type="submit">LOGIN</button>

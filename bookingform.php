@@ -2,6 +2,13 @@
 session_start();
 include 'db.php';   // Include database connection
 
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php"); // Redirect to login page if not logged in
+    exit;
+}
+
+$user_id = $_SESSION['user_id'];
+
 $doctor_id = $_GET['doctor_id'] ?? $_POST['doctor_id'] ?? null;
 
 // Check if form is submitted
@@ -32,20 +39,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         try {
             // Insert appointment into the database
             if (!empty($date) && !empty($time)) {
-            $stmt = $conn->prepare("
-                INSERT INTO appointments (doctor_id, user_name, mobile, email, nic, payment_method, appointment_date, appointment_time, queue_number) 
-                VALUES (:doctor_id, :name, :mobile, :email, :nic, :payment_method, :date, :time, :queue_number)
-            ");
-            $stmt->bindParam(':doctor_id', $doctor_id);
-            $stmt->bindParam(':name', $name);
-            $stmt->bindParam(':mobile', $mobile);
-            $stmt->bindParam(':email', $email);
-            $stmt->bindParam(':nic', $nic);
-            $stmt->bindParam(':payment_method', $payment_method);
-            $stmt->bindParam(':date', $date);
-            $stmt->bindParam(':time', $time);
-            $stmt->bindParam(':queue_number', $queue_number);
-            $stmt->execute();
+                // Insert appointment with the logged-in `user_id`
+                $stmt = $conn->prepare("
+                    INSERT INTO appointments (user_id, doctor_id, user_name, mobile, email, nic, payment_method, appointment_date, appointment_time, queue_number) 
+                    VALUES (:user_id, :doctor_id, :name, :mobile, :email, :nic, :payment_method, :date, :time, :queue_number)
+                ");
+                $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT); // Store appointment for logged-in user
+                $stmt->bindParam(':doctor_id', $doctor_id);
+                $stmt->bindParam(':name', $name);
+                $stmt->bindParam(':mobile', $mobile);
+                $stmt->bindParam(':email', $email);
+                $stmt->bindParam(':nic', $nic);
+                $stmt->bindParam(':payment_method', $payment_method);
+                $stmt->bindParam(':date', $date);
+                $stmt->bindParam(':time', $time);
+                $stmt->bindParam(':queue_number', $queue_number);
+                $stmt->execute();
+
 
             // Redirect to the payment page
             header("Location: payment.html?status=success");
