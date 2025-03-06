@@ -1,71 +1,51 @@
-/* Main Menu */
-.menu-bar {
-    background-color: #005BB5;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.menu-logo {
-    color: white;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.menu-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
-.menu-links li {
-    position: relative;
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.menu-links li a {
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
     color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
-    font-size: 1em;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 5px;
 }
 
-.menu-links li a:hover {
-    background-color: #004897;
-    color: #e0e0e0;
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
-/* Dropdown Menu Styling */
-.menu-links li:hover .dropdown {
-    display: block;
+table tr:hover {
+    background-color: #ddd;
 }
 
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #005BB5;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown li a {
-    display: block;
-    padding: 10px 20px;
-    white-space: nowrap;
+td[colspan="6"] {
+    text-align: center;
+    font-style: italic;
+    color: #666;
 }

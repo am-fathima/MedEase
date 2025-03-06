@@ -8,11 +8,11 @@ $doctor_id = $_GET['doctor_id'];
 
 // Mock doctor details for demonstration
 $doctors = [
-    1 => ['name' => 'Dr. A', 'info' => 'Consultant Cardiologist with 10 years of experience'],
-    2 => ['name' => 'Dr. B', 'info' => 'Senior Cardiologist specializing in Interventional Cardiology'],
-    3 => ['name' => 'Dr. C', 'info' => 'Expert in Pediatric Cardiology'],
-    4 => ['name' => 'Dr. D', 'info' => 'Renowned Cardiac Surgeon'],
-    5 => ['name' => 'Dr. X', 'info' => 'Specialist in Preventive Cardiology'],
+    1 => ['name' => 'Dr. John Doe', 'info' => 'Consultant Cardiologist with 10 years of experience'],
+    2 => ['name' => 'Dr. Jane Smith', 'info' => 'Senior Cardiologist specializing in Interventional Cardiology'],
+    3 => ['name' => 'Dr. Robert Brown', 'info' => 'Expert in Pediatric Cardiology'],
+    4 => ['name' => 'Dr. Silva', 'info' => 'Renowned Cardiac Surgeon'],
+    5 => ['name' => 'Dr.  Perera', 'info' => 'Specialist in Preventive Cardiology'],
 ];
 
 // Fetch doctor details based on ID and checks if the doctor id exist in the array
