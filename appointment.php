@@ -56,11 +56,11 @@ try {
             <?php
                     // Sample array of doctors for demonstration
                     $doctors = [
-                        ['id' => 1, 'name' => 'Dr. A', 'specialization' => 'Cardiologist'],
-                        ['id' => 2, 'name' => 'Dr. B', 'specialization' => 'Cardiologist'],
-                        ['id' => 3, 'name' => 'Dr. C', 'specialization' => 'Cardiologist'],
-                        ['id' => 4, 'name' => 'Dr. D', 'specialization' => 'Cardiologist'],
-                        ['id' => 5, 'name' => 'Dr. X', 'specialization' => 'Cardiologist'],
+                        ['id' => 1, 'name' => 'Dr. John Doe', 'specialization' => 'Cardiologist'],
+                        ['id' => 2, 'name' => 'Dr. Jane Smith', 'specialization' => 'Cardiologist'],
+                        ['id' => 3, 'name' => 'Dr. Robert Brown', 'specialization' => 'Cardiologist'],
+                        ['id' => 4, 'name' => 'Dr. Silva', 'specialization' => 'Cardiologist'],
+                        ['id' => 5, 'name' => 'Dr. Perera', 'specialization' => 'Cardiologist'],
                     ]; ?>
 
                 <?php if (count($appointments) > 0): ?>
