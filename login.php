@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['role'] = 'admin';
             $_SESSION['fullname'] = $admin['name']; // Store admin name
 
-                header("Location: doctors.html");
+                header("Location: admin dashboard.html");
                 exit;
             } else {
                 $errorMessage = "Invalid admin name or password.";
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['role'] = 'doctors';
             $_SESSION['fullname'] = $doctors['name']; // Store admin name
 
-                header("Location: admin view patients.html");
+                header("Location:  doctor dashboard.html");
                 exit;
             } else {
                 $errorMessage = "Invalid admin name or password.";

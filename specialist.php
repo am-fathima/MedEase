@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MedEase - Choose a Cardiac Specialist</title>
-    <link rel="stylesheet" href="speacialist.css"> <!-- Retaining your CSS -->
+    <link rel="stylesheet" href="speacialist.css">  
 </head>
 <body>
     <div class="container">
