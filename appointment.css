@@ -109,12 +109,23 @@ td:last-child {
 .cancel-btn:hover {
     background-color: #c82333;
 }
-.disabled-btn {
-    background-color: #ccc;
-    color: #666;
-    padding: 8px 12px;
+
+
+.back-btn-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.back-btn {
+    background-color: #5f9ea0;
+    color: white;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 14px;
-    cursor: not-allowed;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #4682b4;
 }

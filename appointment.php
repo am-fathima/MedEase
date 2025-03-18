@@ -35,7 +35,7 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Appointments</title>
-    <link rel="stylesheet" href="appointment.css"> <!-- Your CSS file -->
+    <link rel="stylesheet" href="appointment.css">  
 </head>
 <body>
     <div class="container">
@@ -93,6 +93,9 @@ try {
                         <td colspan="7">No appointments found.</td>
                     </tr>
                 <?php endif; ?>
+                <div class="back-btn-section">
+            <button class="back-btn"><a href="home.html">HOME</a></button>
+                 </div>
             </tbody>
         </table>
     </div>
