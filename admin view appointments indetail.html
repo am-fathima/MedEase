@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedEase - Appointments</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #a0c3ff; 
+            display: flex;
+            justify-content: center; 
+            padding-top: 30px; 
+        }
+
+        /* top bar */
+        .topbar-layout {
+            width: 85%;
+            padding: 20px;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .topbar h1 {
+            font-size: 28px;
+            color: #2c5aa0;
+        }
+
+        .topbar h2{
+            font-size: 20px;
+            color: #2c5aa0;
+        }
+
+
+        .container {
+            width: 80%;
+            background-color:white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            margin: 20px auto;
+        }
+
+        
+
+        .profile-icon.profile-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #4d8af0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        }
+
+        .table-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #5a79d6;
+            color: white;
+        }
+
+        .status-paid {
+            color: green;
+            font-weight: bold;
+        }
+
+        .status-due {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .status-failed {
+            color: red;
+            font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="topbar-layout">
+        <div class="topbar">
+            <h1>MedEase</h1>
+            <div class="profile-icon">A</div>
+        </div>    
+
+    <div class="container">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Appointment ID</th>
+                        <th>Patient Name</th>
+                        <th>Doctor ID</th>
+                        <th>Doctor Name</th>
+                        <th>Visit Type</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Amount</th>
+                        <th>Pay Bill</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>M123</td>
+                        <td>Mr. John</td>
+                        <td>D13</td>
+                        <td>Dr. N</td>
+                        <td>Follow up visit</td>
+                        <td>9/8/2024</td>
+                        <td>10:00</td>
+                        <td>RS.500</td>
+                        <td class="status-paid">PAID</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+            
+        </div>
+    </div>
+
+</body>
+</html>
