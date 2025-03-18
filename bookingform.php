@@ -1,9 +1,9 @@
 <?php
 session_start();
-include 'db.php';   // Include database connection
+include 'db.php';   
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php"); // Redirect to login page if not logged in
+    header("Location: login.php"); 
     exit;
 }
 
