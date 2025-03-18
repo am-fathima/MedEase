@@ -50,6 +50,8 @@ try {
                     <th>Queue Number</th>
                     <th>Payment Method</th>
                     <th>Status</th>
+                    <th> Join</th>
+                    <th> Cancel </th>
                 </tr>
             </thead>
             <tbody>
@@ -82,6 +84,8 @@ try {
                             <td><?= htmlspecialchars($appointment['queue_number']) ?></td>
                             <td><?= htmlspecialchars($appointment['payment_method']) ?></td>
                             <td><?= htmlspecialchars($appointment['status']) ?></td>
+                            <td><button type="submit" class="join-btn">Join</button> </td>
+                            <td><button type="submit" class="cancel-btn">Cancel</button> </td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else: ?> <br><br>

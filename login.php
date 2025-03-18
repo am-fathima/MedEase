@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }elseif ($role === 'admin') {
        
             // Check login details in the admin table
-            $stmt = $conn->prepare("SELECT id, name, password FROM admin WHERE name = :name");
+            $stmt = $conn->prepare("SELECT id, name, password FROM admin WHERE name= :name");
             $stmt->bindParam(':name', $email); // Since admin logs in with 'name', not email
             $stmt->execute();
 
@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['role'] = 'admin';
             $_SESSION['fullname'] = $admin['name']; // Store admin name
 
-                header("Location: admin view doctors.html");
+                header("Location: doctors.html");
                 exit;
             } else {
                 $errorMessage = "Invalid admin name or password.";
@@ -61,8 +61,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }elseif ($role === 'doctor') {
        
             // Check login details in the  doctor table
-            $stmt = $conn->prepare("SELECT id, name, password FROM  doctors WHERE name = :name");
-            $stmt->bindParam(':name', $email); // Since  doctors logs in with 'name', not email
+            $stmt = $conn->prepare("SELECT id, name, password FROM  doctors WHERE email = :email");
+            $stmt->bindParam(':email', $email); // Since  doctors logs in with   email
             $stmt->execute();
 
             $doctors = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['role'] = 'doctors';
             $_SESSION['fullname'] = $doctors['name']; // Store admin name
 
-                header("Location: admin view doctors.html");
+                header("Location: admin view patients.html");
                 exit;
             } else {
                 $errorMessage = "Invalid admin name or password.";
