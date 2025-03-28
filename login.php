@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $admin = $stmt->fetch(PDO::FETCH_ASSOC);
 
            // Directly compare passwords (since it's stored in plain text)
-           if ($admin && $password === $admin['password']) {
+           if ($admin && password_verify($password, $admin['password'])) {
             $_SESSION['user_id'] = $admin['id'];
             $_SESSION['role'] = 'admin';
             $_SESSION['fullname'] = $admin['name']; // Store admin name
@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $doctors = $stmt->fetch(PDO::FETCH_ASSOC);
 
            // Directly compare passwords (since it's stored in plain text)
-           if ($doctors && $password === $doctors['password']) {
+           if ($doctors && password_verify($password, $doctors['password'])) {
             $_SESSION['user_id'] = $doctors['id'];
             $_SESSION['role'] = 'doctors';
             $_SESSION['fullname'] = $doctors['name']; // Store admin name
